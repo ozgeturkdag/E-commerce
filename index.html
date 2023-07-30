@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>E-Commerce</h1>
+        <input type="text" placeholder="Write the product you are looking for">
+        <div>
+            <button id="basket">My Basket</button>
+            <button>Sign Up</button>
+            <button>Login</button>
+        </div>
+    </header>
+    <main>
+    <!--Categories-->
+    <section id="category-sec">
+        <h1>Categories</h1>
+        <div class="categories">
+            <div class="category-card">
+                <img src="https://picsum.photos/640/640?r=4713">
+                <p>Clothes</p>
+            </div>
+        </div>    
+    </section>
+
+<!--Products-->
+    <section>
+        <h1>Products</h1>
+        <div class="products">
+        </div>
+    </section>
+    </main>
+
+<!-- Modal (Basket)-->
+<div class="modal-wrapper">
+    <div class="modal">
+        <h1>Basket</h1>
+      <div id="icon">
+        <img id="close" src="/images/e-close.png" />
+      </div>
+      <div id="list">
+        <div class="item">
+            <img src="https://picsum.photos/640/640?r=8459">
+            <h3>Marcos</h3>
+            <h3>315 &#8378</h3>
+            <p>Amount: 3</p>
+            <img id="delete" src="/images/e-trash.png" />
+        </div>
+      </div>
+      <p id="total">
+        <span id="count">0 products</span> Total:
+        <span id="total-price">0</span> &#8378;
+      </p>
+    </div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
